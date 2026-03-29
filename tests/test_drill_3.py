@@ -1,7 +1,10 @@
 """Autograder tests for Module 3 Core Skills Drill."""
 import sqlite3
 from pathlib import Path
+import sys
+import os
 
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 def test_drill_queries_file_exists():
     assert Path("drill_queries.py").exists(), "drill_queries.py not found"
